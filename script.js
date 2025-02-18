@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Czech Republic/Prague": "Info will be added",
         "Denmark/Copenhagen": "Info will be added",
         "Estonia/Tallinn": "Info will be added",
-        "Eswatini/Mbabane": "Info will be added",
+        "Eswatini/Mbabane": "This location is actually burnt for us! It went good for a while, then messed up. The lady in Eswatini doesn't like to approve of people that were out of school for too long. So, an athlete must have a recent KCSE to go there.",
         "Finland/Helsinki": "Info will be added",
         "France/Paris": "Info will be added",
         "Germany/Berlin": "Info will be added",
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Lithuania/Vilnius": "Info will be added",
         "Luxembourg/Luxembourg": "Info will be added",
         "Madagascar/Antananarivo": "Info will be added",
-        "Mauritius/Port Louis": "Info will be added",
+        "Mauritius/Port Louis": "It depends on interviewer. No consistent luck with this location but it can still be evaluated. It's very important that no more that one person should go there next time. In 2024 we sent 4 athletes on the same day there and all of them were denied on. No Uber or Bolt is available. Shuttle must be booked upfront or athletes need enough money to pay local for transportation.",
         "Nigeria/Lagos": "Info will be added",
         "Nigeria/Abuja": "Info will be added",
         "Norway/Oslo": "Info will be added",
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Serbia/Belgrade": "Info will be added",
         "South Africa/Cape Town": "Info will be added",
         "South Africa/Durban": "Info will be added",
-        "South Africa/Johannesburg": "Info will be added",
+        "South Africa/Johannesburg": "This location seems to depend on an interviewer, we avoid Johannesburg for Kenyans, they ideally should go to Cape Town. For other nationalities Johannesburg might be an option though.",
         "Sri Lanka/Colombo": "Info will be added",
         "Sweden/Stockholm": "Info will be added",
         "Switzerland/Bern": "Info will be added",
@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
         "Zimbabwe/Harare": "Info will be added"
     };
     
-
     // Define detailed button information for locations
     const locationDetails = {
         "South Africa/Cape Town": {
