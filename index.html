@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">how
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Location Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <section class="athlete-location">
+            <h2>Assess Visa Locations for Your Athlete!</h2>
+            <p>How old is the athlete?</p>
+            <label><input type="radio" name="age" value="under20" onclick="showQuestions('under20')"> Under 20</label>
+            <label><input type="radio" name="age" value="20-25" onclick="showQuestions('20-25')"> 20-25</label>
+            <label><input type="radio" name="age" value="over25" onclick="showQuestions('over25')"> Over 25</label>
+            
+            <div id="questionnaire" class="hidden">
+                <p>Good English skills?</p>
+                <label><input type="radio" name="english" value="yes"> Yes</label>
+                <label><input type="radio" name="english" value="no"> No</label>
+                
+                <p>Recent KCSE?</p>
+                <label><input type="radio" name="kcse" value="yes"> Yes</label>
+                <label><input type="radio" name="kcse" value="no"> No</label>
+                
+                <p>Can travel to EU?</p>
+                <label><input type="radio" name="eu" value="yes"> Yes</label>
+                <label><input type="radio" name="eu" value="no"> No</label>
+                
+                <p>Previous visa denials?</p>
+                <label><input type="radio" name="denial" value="yes"> Yes</label>
+                <label><input type="radio" name="denial" value="no"> No</label>
+                
+                <button onclick="suggestLocation()">Our Recommendation</button>
+                <div id="suggestion" class="hidden">Will be updated</div>
+            </div>
+
+        </section>
+        <section class="visa-location">
+            <h2>Location Information</h2>
+            <select id="visaLocation" onchange="showLocationInfo()">
+                <option value="">Select a location</option>
+                <option value="Eswatini/Mbabane">Eswatini/Mbabane</option>
+                <option value="South Africa/Johannesburg">South Africa/Johannesburg</option>
+                <option value="South Africa/Durban">South Africa/Durban</option>
+                <option value="South Africa/Cape Town">South Africa/Cape Town</option>
+                <option value="Mauritius/Port Louis">Mauritius/Port Louis</option>
+                <option value="Zambia/Lusaka">Zambia/Lusaka</option>
+                <option value="Zimbabwe/Harare">Zimbabwe/Harare</option>
+                <option value="Senegal/Dakar">Senegal/Dakar</option>
+                <option value="Nigeria/Lagos">Nigeria/Lagos</option>
+                <option value="Togo/Lome">Togo/Lome</option>
+                <option value="Liberia/Monrovia">Liberia/Monrovia</option>
+                <option value="Madagascar/Antananarivo">Madagascar/Antananarivo</option>
+                <option value="Japan/Tokyo">Japan/Tokyo</option>
+                <option value="Bahrain/Manama">Bahrain/Manama</option>
+                <option value="Luxembourg/Luxembourg">Luxembourg/Luxembourg</option>
+                <option value="Poland/Krakow">Poland/Krakow</option>
+                <option value="Poland/Warsaw">Poland/Warsaw</option>
+                <option value="Portugal/Lisbon">Portugal/Lisbon</option>
+                <option value="Sweden/Stockholm">Sweden/Stockholm</option>
+                <option value="Norway/Oslo">Norway/Oslo</option>
+                <option value="Switzerland/Bern">Switzerland/Bern</option>
+                <option value="Belgium/Brussels">Belgium/Brussels</option>
+                <option value="Czechia/Prague">Czechia/Prague</option>
+                <option value="Slovakia/Bratislava">Slovakia/Bratislava</option>
+                <option value="Croatia/Zagreb">Croatia/Zagreb</option>
+                <option value="Lithuania/Vilnius">Lithuania/Vilnius</option>
+                <option value="Estonia/Tallinn">Estonia/Tallinn</option>
+                <option value="Bosnia and Herzegovina/Sarajevo">Bosnia and Herzegovina/Sarajevo</option>
+                <option value="India/Chennai">India/Chennai</option>
+                <option value="India/Kolkata">India/Kolkata</option>
+                <option value="India/New Delhi">India/New Delhi</option>
+                <option value="India/Mumbai">India/Mumbai</option>
+                <option value="India/Hyderabad">India/Hyderabad</option>
+                <option value="Sri Lanka/Colombo">Sri Lanka/Colombo</option>
+                <option value="Turkey/Istanbul">Turkey/Istanbul</option>
+                <option value="Turkey/Ankara">Turkey/Ankara</option>
+            </select>
+            <div id="locationInfo" class="hidden">
+                <p id="infoText">Info to be added</p>
+                <button data-type="approval" onclick="showMoreInfo('approval')">Approval info</button>
+<button data-type="questions" onclick="showMoreInfo('questions')">Questions</button>
+<button data-type="processing" onclick="showMoreInfo('processing')">Processing time and delivery</button>
+<button data-type="approved" onclick="showMoreInfo('approved')">Athletes approved</button>
+<button data-type="denied" onclick="showMoreInfo('denied')">Athletes denied</button>
+
+                <div id="additionalInfo" class="hidden">To be updated</div>
+            </div>
+        </section>
+        
+      
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
