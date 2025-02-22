@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <section class="athlete-location">
-        <h2>Assess Visa Locations for Your Athlete!</h2>
+        <h1>Assess Visa Locations for Your Athlete!</h1>
         <p><b>How old is the athlete?</b></p>
         <label
           ><input
@@ -60,14 +60,15 @@
           <label><input type="radio" name="startdate" value="yes" /> Yes</label>
           <label><input type="radio" name="startdate" value="no" /> No</label>
 
-          <button onclick="suggestLocation()"><b>Our Recommendation</b></button>
+          <button id="recommend" onclick="suggestLocation()"><b>Recommended Locations</b></button>
           <div id="suggestion" class="hidden">Will be updated</div>
         </div>
       </section>
+
       <section class="visa-location">
-        <h2>Location Information</h2>
+        <h3>Locations Summary</h3>
         <select id="visaLocation" onchange="showLocationInfo()">
-            <option value="">-- Select a country --</option>
+          <option value="">-- Select a country --</option>
           <option value="Austria/Vienna">Austria/Vienna</option>
           <option value="Bahrain/Manama">Bahrain/Manama</option>
           <option value="Belgium/Brussels">Belgium/Brussels</option>
@@ -123,6 +124,7 @@
           <option value="Zambia/Lusaka">Togo/Lome</option>
           <option value="Zimbabwe/Harare">Zimbabwe/Harare</option>
         </select>
+
         <div id="locationInfo" class="hidden">
           <p id="infoText"></p>
           <p><i>*Data retrieved from 2024</i></p>
@@ -148,23 +150,23 @@
           <div id="additionalInfo" class="hidden">To be updated</div>
         </div>
       </section>
+      
       <h4><i><u>Useful Guides&Links</u></i></h4>
-      <section class="visafreetravel-nigerians">
-        <p><i>Visa Free Countries for Nigerians please check <a href="https://visaindex.com/visa-requirement/nigeria-passport-visa-free-countries-list/" target="_blank">here</i>.</a></p>
-    </section></h5>
-      </section>
-      <section class="visafreetravel-kenyans">
-        <p><i>Visa Free Countries for Kenyans please check <a href="https://visaindex.com/visa-requirement/kenya-passport-visa-free-countries-list/" target="_blank">here</i>.</a></p>
-      </section>
       <section class="useful-links">
-        <p><i><a href="https://docs.google.com/spreadsheets/d/1EE8UYWKg-uMctIKcL7JfDmWyirIs8gxsOJGqyEAUPbc/edit?gid=0#gid=0" target="_blank">World Embassy Database</a></i> (to be finished)</p>
-        <p><i><a href="https://docs.google.com/document/d/1A7VbJ_uNLTBLXMvT31mARS0ykXYvLXFc_usK1mWYMEQ/edit?tab=t.0#heading=h.fvox1lqb5i63" target="_blank">Embassy Email Addresses for Coaches</a></i></p>
-        <p><i><a href="https://docs.google.com/document/d/1B6cmjJ2O7cttPyoq50ABWL5FUbFcnaTCVec57r-ql0w/edit?tab=t.0#heading=h.6l03vgi8kv6r" target="_blank">Premier Visa&eVisa Process Description</a></i> (to be finished)</p>
-        <p><i><a href="https://docs.google.com/spreadsheets/d/1tvMc_env3SRRXdDZzm5h4L8747Ica2ZDOZI0QBbF80w/edit?usp=sharing" target="_blank">Premier Visa Statistics</a></i></p>
-        <p><i><a href="https://docs.google.com/document/d/1tlPpwguBtYqD8rX98pL6_60OtG8k5ziRhUm7x8GMOxU/edit?usp=sharing" target="_blank">Email Draft Visa Questions</a></i></p>
-        <p><i><a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/global-visa-wait-times.html" target="_blank">Global Visa Wait Times</a></i></p>
-        <p><i>Please share your thoughts or comments in our original <a href="" target="_blank">Worksheet.</a></i></p>
-      </section>
+        <ul>
+            <li><i>Visa Free Countries for Nigerians, please check <a href="https://visaindex.com/visa-requirement/nigeria-passport-visa-free-countries-list/" target="_blank">here</a></i></li>
+            <li><i>Visa Free Countries for Kenyans, please check <a href="https://visaindex.com/visa-requirement/kenya-passport-visa-free-countries-list/" target="_blank">here</a></i></li>
+            <li><i><a href="https://docs.google.com/spreadsheets/d/1EE8UYWKg-uMctIKcL7JfDmWyirIs8gxsOJGqyEAUPbc/edit?gid=0#gid=0" target="_blank">World Embassy Database</a></i> (to be finished)</li>
+            <li><i><a href="https://docs.google.com/document/d/1A7VbJ_uNLTBLXMvT31mARS0ykXYvLXFc_usK1mWYMEQ/edit?tab=t.0#heading=h.fvox1lqb5i63" target="_blank">Embassy Email Addresses for Coaches</a></i></li>
+            <li><i><a href="https://docs.google.com/document/d/1B6cmjJ2O7cttPyoq50ABWL5FUbFcnaTCVec57r-ql0w/edit?tab=t.0#heading=h.6l03vgi8kv6r" target="_blank">Premier Visa & eVisa Process Description</a></i> (to be finished)</li>
+            <li><i><a href="https://docs.google.com/spreadsheets/d/1tvMc_env3SRRXdDZzm5h4L8747Ica2ZDOZI0QBbF80w/edit?usp=sharing" target="_blank">Premier Visa Statistics</a></i></li>
+            <li><i><a href="https://docs.google.com/document/d/1tlPpwguBtYqD8rX98pL6_60OtG8k5ziRhUm7x8GMOxU/edit?usp=sharing" target="_blank">Email Draft Visa Questions</a></i></li>
+            <li><i><a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/global-visa-wait-times.html" target="_blank">Global Visa Wait Times</a></i></li>
+            <li><i><a href="https://ceac.state.gov/ceacstattracker/status.aspx" target="_blank">Visa Status Check</a></i></li>
+        </ul>
+        <i>Please share your thoughts or comments in our original <a href="" target="_blank">Worksheet</a>.</i>
+    </section>
+    
       <h4>Thank you!</h4>
     </div>
     <script src="script.js"></script>
