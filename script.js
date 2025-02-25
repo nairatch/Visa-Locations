@@ -171,29 +171,30 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   // Function to handle the suggestion logic
-  window.suggestLocation = function () {
-    let english = document.querySelector(
-      'input[name="english"]:checked'
-    )?.value;
-    let kcse = document.querySelector('input[name="kcse"]:checked')?.value;
-    let eu = document.querySelector('input[name="eu"]:checked')?.value;
-    let denial = document.querySelector('input[name="denial"]:checked')?.value;
-    let startdate = document.querySelector(
-      'input[name="startdate"]:checked'
-    )?.value;
+window.suggestLocation = function () {
+  let english = document.querySelector('input[name="english"]:checked')?.value;
+  let kcse = document.querySelector('input[name="kcse"]:checked')?.value;
+  let eu = document.querySelector('input[name="eu"]:checked')?.value;
+  let denial = document.querySelector('input[name="denial"]:checked')?.value;
+  let startdate = document.querySelector('input[name="startdate"]:checked')?.value;
 
-    if (
-      english === "yes" &&
-      kcse === "yes" &&
-      eu === "yes" &&
-      denial === "no"
-    ) {
-      suggestionDiv.textContent =
-        "The athlete can go anywhere. The first choice in Europe would be Prague, Lisbon, or Brussels. Oslo and Stockholm would work as well, even though a bit more expensive for travelling. Bern is also expensive. Bratislava or Zagreb could work as well.";
-    } else {
-      suggestionDiv.textContent = "Will be updated.";
-    }
+  let suggestionDiv = document.getElementById("suggestion");
 
-    suggestionDiv.classList.remove("hidden");
-  };
+  // Ensure the div remains hidden unless a suggestion is made
+  if (english && kcse && eu && denial && startdate) {
+      if (english === "yes" && kcse === "yes" && eu === "yes" && denial === "no") {
+          suggestionDiv.textContent =
+              "The athlete can go anywhere. The first choice in Europe would be Prague, Lisbon, or Brussels. Oslo and Stockholm would work as well, even though a bit more expensive for travelling. Bern is also expensive. Bratislava or Zagreb could work as well.";
+      } else {
+          suggestionDiv.textContent = "Will be updated.";
+      }
+
+   // Make suggestion div visible only when there's content
+   suggestionDiv.style.display = "block";
+  } else {
+      // Hide the div completely if fields are missing
+      suggestionDiv.style.display = "none";
+  }
+};
+
 });

@@ -51,14 +51,14 @@ body {
   font-weight: 800;
 }
 #suggestion {
-  display: block;
+  display: none;
   width: auto;
   font-weight: 800;
   padding: 10px;
   color: black; /* Dark text for readability */
   cursor: pointer;
   transition: background 0.3s ease;
-  border: 2px solid #007BFF; /* Blue border */
+  border: 2px solid #007BFF; /* Blue border */   
   border-radius: 5px; /* Optional: Rounded corners */
 }
 
