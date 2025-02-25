@@ -9,64 +9,61 @@
   <body>
     <div class="container">
       <section class="athlete-location">
-        <h1>Assess Visa Locations for Your Athlete!</h1>
-        <p><b>How old is the athlete?</b></p>
-        <label
-          ><input
-            type="radio"
-            name="age"
-            value="under20"
-            onclick="showQuestions('under20')"
-          />
-          Under 20</label
-        >
-        <label
-          ><input
-            type="radio"
-            name="age"
-            value="20-25"
-            onclick="showQuestions('20-25')"
-          />
-          20-25</label
-        >
-        <label
-          ><input
-            type="radio"
-            name="age"
-            value="over25"
-            onclick="showQuestions('over25')"
-          />
-          Over 25</label
-        >
+        <h1>Locations Assessment</h1>
+        <p id="introText">Start a Questionnaire</p>
 
-        <div id="questionnaire" class="hidden">
-          <p><b>Good English skills?</b></p>
-          <label><input type="radio" name="english" value="yes" /> Yes</label>
-          <label><input type="radio" name="english" value="no" /> No</label>
+        <div id="questionnaire" style="display: none">
+          <div id="ageGroupDiv">
+            <p>How old is the athlete?</p>
+            <input type="radio" name="ageGroup" value="under20" /> Under 20
+            <input type="radio" name="ageGroup" value="between20-25" /> Between
+            20-25 <input type="radio" name="ageGroup" value="25plus" /> 25 and
+            above
+          </div>
 
-          <p><b>Recent KCSE?</b></p>
-          <label><input type="radio" name="kcse" value="yes" /> Yes</label>
-          <label><input type="radio" name="kcse" value="no" /> No</label>
+          <div id="englishDiv" style="display: none">
+            <p>Does the athlete have good English skills?</p>
+            <input type="radio" name="english" value="yes" /> Yes
+            <input type="radio" name="english" value="no" /> No
+          </div>
 
-          <p><b>Can travel to EU?</b></p>
-          <label><input type="radio" name="eu" value="yes" /> Yes</label>
-          <label><input type="radio" name="eu" value="no" /> No</label>
+          <div id="kcseDiv" style="display: none">
+            <p>Does the athlete have a recent KCSE?</p>
+            <input type="radio" name="kcse" value="yes" /> Yes
+            <input type="radio" name="kcse" value="no" /> No
+          </div>
 
-          <p><b>Previous visa denials?</b></p>
-          <label><input type="radio" name="denial" value="yes" /> Yes</label>
-          <label><input type="radio" name="denial" value="no" /> No</label>
+          <div id="euDiv" style="display: none">
+            <p>Can the athlete travel EU?</p>
+            <input type="radio" name="eu" value="yes" /> Yes
+            <input type="radio" name="eu" value="no" /> No
+          </div>
 
-          <p><b>Is the program start date within 2 months?</b></p>
-          <label><input type="radio" name="startdate" value="yes" /> Yes</label>
-          <label><input type="radio" name="startdate" value="no" /> No</label>
+          <div id="denialDiv" style="display: none">
+            <p>Has the athlete been denied a visa before?</p>
+            <input type="radio" name="denial" value="yes" /> Yes
+            <input type="radio" name="denial" value="no" /> No
+          </div>
 
-          <button id="recommend" onclick="suggestLocation()"><b>Recommended Locations</b></button>
-          <div id="suggestion" class="hidden"></div>
+          <div id="startdateDiv" style="display: none">
+            <p>Is the start date within 2 months?</p>
+            <input type="radio" name="startdate" value="yes" /> Yes
+            <input type="radio" name="startdate" value="no" /> No
+          </div>
+
+          <br />
+          <button id="recommendButton">Recommended</button><br />
+          <p id="warningMessage" style="display: none; color: red">
+            Please answer all questions to proceed!
+          </p>
+          <div id="suggestion" style="display: none"></div>
         </div>
+        <br />
+        <button id="resetButton" style="display: none">Reset</button>
       </section>
 
       <section class="visa-location">
-        <h3>Locations Summary</h3>
+        <h1>Locations Summary</h1>
         <select id="visaLocation" onchange="showLocationInfo()">
           <option value="">-- Select a country --</option>
           <option value="Austria/Vienna">Austria/Vienna</option>
@@ -101,7 +98,9 @@
           <option value="Liberia/Monrovia">Liberia/Monrovia</option>
           <option value="Lithuania/Vilnius">Lithuania/Vilnius</option>
           <option value="Luxembourg/Luxembourg">Luxembourg/Luxembourg</option>
-          <option value="Madagascar/Antananarivo">Madagascar/Antananarivo</option>
+          <option value="Madagascar/Antananarivo">
+            Madagascar/Antananarivo
+          </option>
           <option value="Mauritius/Port Louis">Mauritius/Port Louis</option>
           <option value="Nigeria/Lagos">Nigeria/Lagos</option>
           <option value="Nigeria/Abuja">Nigeria/Abuja</option>
@@ -115,58 +114,133 @@
           <option value="Slovakia/Bratislava">Slovakia/Bratislava</option>
           <option value="South Africa/Cape Town">South Africa/Cape Town</option>
           <option value="South Africa/Durban">South Africa/Durban</option>
-          <option value="South Africa/Johannesburg">South Africa/Johannesburg</option>
+          <option value="South Africa/Johannesburg">
+            South Africa/Johannesburg
+          </option>
           <option value="Sri Lanka/Colombo">Sri Lanka/Colombo</option>
           <option value="Sweden/Stockholm">Sweden/Stockholm</option>
           <option value="Switzerland/Bern">Switzerland/Bern</option>
-          <option value="The Netherlands/Amsterdam">The Netherlands/Amsterdam</option>
+          <option value="The Netherlands/Amsterdam">
+            The Netherlands/Amsterdam
+          </option>
           <option value="Togo/Lome">Togo/Lome</option>
           <option value="Zambia/Lusaka">Togo/Lome</option>
           <option value="Zimbabwe/Harare">Zimbabwe/Harare</option>
         </select>
 
-        <div id="locationInfo" class="hidden">
-          <p id="infoText"></p>
-          <p><i>*Data retrieved from 2024</i></p>
-          <button data-type="waitingtime" onclick="showMoreInfo('waitingtime')">
-            <b>Average Waiting Time</b>
-          </button>
-          <button data-type="approval" onclick="showMoreInfo('approval')">
-            <b>Approval Rate</b>
-          </button>
-          <button data-type="processing" onclick="showMoreInfo('processing')">
-            <b>Visa Processing time and Delivery</b>
-          </button>
-          <button data-type="approved" onclick="showMoreInfo('approved')">
-            <b>Athletes Approved</b>
-          </button>
-          <button data-type="denied" onclick="showMoreInfo('denied')">
-            <b>Athletes Denied</b>
-          </button>
-          <button data-type="questions" onclick="showMoreInfo('questions')">
-            <b>Interview Questions</b>
-          </button>
+        <div id="locationInfo" style="display: none">
+          <div id="infoText"></div>
+        </div>
 
-          <div id="additionalInfo" class="hidden">To be updated</div>
+<br>
+        <button id="waitingTime">Waiting Time</button>
+        <button id="approvalButton">Approval Rate</button>
+        <button id="processingButton">Processing Time</button>
+        <button id="approvedButton">Athletes Approved</button>
+        <button id="deniedButton">Athletes Denied</button>
+        <button id="questionsButton">Interview Questions</button>
+       
+       
+        <div id="additionalInfo" style="display: none">
+          <div id="additionalInfoText"></div>
         </div>
       </section>
-      
-      <h4><i><u>Useful Guides&Links</u></i></h4>
+
       <section class="useful-links">
+        <h1>Useful Guides&Links</h1>
         <ul>
-            <li><i>Visa Free Countries for Nigerians, please check <a href="https://visaindex.com/visa-requirement/nigeria-passport-visa-free-countries-list/" target="_blank">here</a></i></li>
-            <li><i>Visa Free Countries for Kenyans, please check <a href="https://visaindex.com/visa-requirement/kenya-passport-visa-free-countries-list/" target="_blank">here</a></i></li>
-            <li><i><a href="https://docs.google.com/spreadsheets/d/1EE8UYWKg-uMctIKcL7JfDmWyirIs8gxsOJGqyEAUPbc/edit?gid=0#gid=0" target="_blank">World Embassy Database</a></i> (to be finished)</li>
-            <li><i><a href="https://docs.google.com/document/d/1A7VbJ_uNLTBLXMvT31mARS0ykXYvLXFc_usK1mWYMEQ/edit?tab=t.0#heading=h.fvox1lqb5i63" target="_blank">Embassy Email Addresses for Coaches</a></i></li>
-            <li><i><a href="https://docs.google.com/document/d/1B6cmjJ2O7cttPyoq50ABWL5FUbFcnaTCVec57r-ql0w/edit?tab=t.0#heading=h.6l03vgi8kv6r" target="_blank">Premier Visa & eVisa Process Description</a></i> (to be finished)</li>
-            <li><i><a href="https://docs.google.com/spreadsheets/d/1tvMc_env3SRRXdDZzm5h4L8747Ica2ZDOZI0QBbF80w/edit?usp=sharing" target="_blank">Premier Visa Statistics</a></i></li>
-            <li><i><a href="https://docs.google.com/document/d/1tlPpwguBtYqD8rX98pL6_60OtG8k5ziRhUm7x8GMOxU/edit?usp=sharing" target="_blank">Email Draft Visa Questions</a></i></li>
-            <li><i><a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/global-visa-wait-times.html" target="_blank">Global Visa Wait Times</a></i></li>
-            <li><i><a href="https://ceac.state.gov/ceacstattracker/status.aspx" target="_blank">Visa Status Check</a></i></li>
+          <li>
+            <i
+              >Visa Free Countries for Nigerians, please check
+              <a
+                href="https://visaindex.com/visa-requirement/nigeria-passport-visa-free-countries-list/"
+                target="_blank"
+                >here</a
+              ></i
+            >
+          </li>
+          <li>
+            <i
+              >Visa Free Countries for Kenyans, please check
+              <a
+                href="https://visaindex.com/visa-requirement/kenya-passport-visa-free-countries-list/"
+                target="_blank"
+                >here</a
+              ></i
+            >
+          </li>
+          <li>
+            <i
+              ><a
+                href="https://docs.google.com/spreadsheets/d/1EE8UYWKg-uMctIKcL7JfDmWyirIs8gxsOJGqyEAUPbc/edit?gid=0#gid=0"
+                target="_blank"
+                >World Embassy Database</a
+              ></i
+            >
+            (to be finished)
+          </li>
+          <li>
+            <i
+              ><a
+                href="https://docs.google.com/document/d/1A7VbJ_uNLTBLXMvT31mARS0ykXYvLXFc_usK1mWYMEQ/edit?tab=t.0#heading=h.fvox1lqb5i63"
+                target="_blank"
+                >Embassy Email Addresses for Coaches</a
+              ></i
+            >
+          </li>
+          <li>
+            <i
+              ><a
+                href="https://docs.google.com/document/d/1B6cmjJ2O7cttPyoq50ABWL5FUbFcnaTCVec57r-ql0w/edit?tab=t.0#heading=h.6l03vgi8kv6r"
+                target="_blank"
+                >Premier Visa & eVisa Process Description</a
+              ></i
+            >
+            (to be finished)
+          </li>
+          <li>
+            <i
+              ><a
+                href="https://docs.google.com/spreadsheets/d/1tvMc_env3SRRXdDZzm5h4L8747Ica2ZDOZI0QBbF80w/edit?usp=sharing"
+                target="_blank"
+                >Premier Visa Statistics</a
+              ></i
+            >
+          </li>
+          <li>
+            <i
+              ><a
+                href="https://docs.google.com/document/d/1tlPpwguBtYqD8rX98pL6_60OtG8k5ziRhUm7x8GMOxU/edit?usp=sharing"
+                target="_blank"
+                >Email Draft Visa Questions</a
+              ></i
+            >
+          </li>
+          <li>
+            <i
+              ><a
+                href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/global-visa-wait-times.html"
+                target="_blank"
+                >Global Visa Wait Times</a
+              ></i
+            >
+          </li>
+          <li>
+            <i
+              ><a
+                href="https://ceac.state.gov/ceacstattracker/status.aspx"
+                target="_blank"
+                >Visa Status Check</a
+              ></i
+            >
+          </li>
         </ul>
-        <i>Please share your thoughts or comments in our original <a href="" target="_blank">Worksheet</a>.</i>
-    </section>
-    
+        <i
+          >Please share your thoughts or comments in our original
+          <a href="" target="_blank">Worksheet</a>.</i
+        >
+      </section>
+
       <h4>Thank you!</h4>
     </div>
     <script src="script.js"></script>

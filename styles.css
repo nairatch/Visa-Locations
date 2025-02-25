@@ -1,106 +1,167 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background-color: #f4f4f4;
+section {
+  background-color: white; /* White background for contrast */
+  padding: 10px; /* Space inside */
+  padding-bottom: 10px;
+  margin-bottom: 10px; /* Space between sections */
+  border-radius: 8px; /* Rounded edges */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  
+}
+
+h1 {
+  font-size: 28px; /* Slightly larger */
+  font-weight: 700; /* Bold for emphasis */
+ 
+  text-transform: uppercase; /* Modern uppercase style */
+  letter-spacing: 1.5px; /* Spaced-out letters */
+  color: #333; /* Dark gray for a sleek look */
+  background: linear-gradient(45deg, #4a90e2, #357abd); /* Subtle blue gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Gradient text effect */
+  margin-bottom: 20px; /* More spacing */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); /* Light shadow for depth */
+}
+
+
+
+p {
+  font-weight: bold;
 }
 
 .container {
-  max-width: 400px;
+  max-width: 600px; /* Wider container for better layout */
   margin: auto;
-  background: white;
-  padding: 20px;
+  background: #f8f9fa; /* Light gray background */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#introText {
+  position: relative;
+  width: 50%;
+  display: inline-block;
+  padding: 5px 0px;
+  background-color: #4a90e2; /* A modern blue shade */
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.hidden {
-  display: none;
-}
-#recommend {
-  border: 2px solid #007BFF; /* Blue border */
-  font-size: 16px; /* Adjust font size */
-  
-  background-color: white; /* Background color */
-  color: #007BFF; /* Text color */
-  padding: 10px 20px; /* Add padding */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer on hover */
-}
-
-#recommend:hover {
-  background-color: whitesmoke;
-}
-
-#visaLocation {
-  border: 2px solid #007BFF; /* Blue border */
-  font-size: 16px; /* Adjust font size */
-  font-weight: 600;
-  background-color: #007BFF; /* Background color */
-  color: whitesmoke; /* Text color */
-  padding: 10px 20px; /* Add padding */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer on hover */
-  width: 100%;
-}
-
-#visaLocation:hover {
-  background-color: white;
-  color: #007BFF;
-}
-#infoText {
-  font-weight: 800;
-}
-#suggestion {
-  display: none;
-  width: auto;
-  font-weight: 800;
-  padding: 10px;
-  color: black; /* Dark text for readability */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
   cursor: pointer;
-  transition: background 0.3s ease;
-  border: 2px solid #007BFF; /* Blue border */   
-  border-radius: 5px; /* Optional: Rounded corners */
 }
 
-#suggestion:hover {
-  background-color: whitesmoke;
+#introText:hover {
+  background-color: #357abd; /* Darker blue for hover */
+  transform: scale(1.05); /* Slight scaling effect */
 }
 
-button {
-  display: block;
-  width: 100%;
-  margin: 5px 0;
-  padding: 10px;
-  border-style: dotted;
-  background-color: white;
-  color: black;
-  cursor: pointer;
+#introText::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid #4a90e2;
+  transition: border-left-color 0.3s ease;
+}
+
+#introText:hover::after {
+  border-left-color: #357abd; /* Darker arrow color on hover */
+}
+
+#recommendButton {
+  background-color: #28a745; /* Green for positive action */
+  padding: 6px 14px;
   font-size: 16px;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
-
-button:hover {
-  background-color: whitesmoke;
-}
-
-.info-box {
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.message-box {
-  display: block;
-  width: auto;
-  padding: 10px;
-  color: black; /* Dark text for readability */
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
-  border: 2px solid #007BFF; /* Blue border */
-  border-radius: 5px; /* Optional: Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.message-box:hover {
-  background-color: whitesmoke;
+#recommendButton:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+  
+
+}
+
+#resetButton {
+  background-color: #dca235; /* Red color for reset */
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Light shadow */
+  display: block; /* Ensure it's visible when required */
+}
+
+#resetButton:hover {
+  background-color: #c82333; /* Slightly darker red on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+
+.useful-links {
+  background-color: #eef5ff; /* Slightly blue background for distinction */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Ensure all buttons have consistent width */
+button {
+  width: 145px; /* Set width for all buttons */
+  padding: 4px 8px; /* Adjust padding */
+  font-size: 14px; /* Font size */
+  margin: 5px; /* Space between buttons */
+  border: 1px solid #ccc; /* Border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f0f0f0; /* Light background */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #007BFF; /* Blue background on hover */
+  color: white; /* Text color white */
+  border-color: #007BFF; /* Border color on hover */
+}
+
+/* Active or clicked state */
+button.active {
+  background-color: #28a745; /* Green background when clicked */
+  color: white; /* White text */
+  border-color: #28a745; /* Border color when clicked */
+}
+
+/* Style for the info section */
+#additionalInfoDiv {
+  display: none; /* Initially hide the info */
+  margin-top: 15px; /* Space above the info section */
+}
+
+#additionalInfoText {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
 }
