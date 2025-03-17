@@ -92,9 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let kcse = document.querySelector('input[name="kcse"]:checked')?.value;
     let eu = document.querySelector('input[name="eu"]:checked')?.value;
     let denial = document.querySelector('input[name="denial"]:checked')?.value;
-    let startdate = document.querySelector(
-      'input[name="startdate"]:checked'
-    )?.value;
+    let startdate = document.querySelector('input[name="startdate"]:checked')?.value;
 
     // Ensure the div remains hidden unless a suggestion is made
     if (english && kcse && eu && denial && startdate) {
@@ -259,46 +257,46 @@ document.addEventListener("DOMContentLoaded", function () {
             {
               question: "Why do you want to go to America?",
               answer:
-                "I want to go to America to study, and I have been offered a full scholarship which will cover all my study-related costs."
+                "I want to go to America to study, and I have been offered a full scholarship which will cover all my study-related costs.",
             },
             {
               question: "How did you get to know about the school?",
               answer:
-                "I got to know about the school due to my outstanding performance in a time trial, where I ran a good time. The school offered me a full scholarship."
+                "I got to know about the school due to my outstanding performance in a time trial, where I ran a good time. The school offered me a full scholarship.",
             },
             {
               question: "Do you live in Mauritius?",
               answer:
-                "No, I am here for my visa interview because there is no valid visa date in my home country, Kenya."
+                "No, I am here for my visa interview because there is no valid visa date in my home country, Kenya.",
             },
             {
               question: "Which school are you going to?",
-              answer: "I'm going to Mississippi State University."
-            }
-          ]
+              answer: "I'm going to Mississippi State University.",
+            },
+          ],
         },
         {
           name: "Nelly Jemeli",
           questionsAndAnswers: [
             {
               question: "Do you know the coach of the school?",
-              answer: "Yes, I know the coach."
+              answer: "Yes, I know the coach.",
             },
             {
               question: "What are you going to do in America?",
-              answer: "I will be studying and training in my field."
+              answer: "I will be studying and training in my field.",
             },
             {
               question: "Do you know the major?",
-              answer: "Yes, I will be majoring in Sports Management."
-            }
-          ]
-        }
-      ]
+              answer: "Yes, I will be majoring in Sports Management.",
+            },
+          ],
+        },
+      ],
     },
     // Add other locations' additional information here
   };
-  
+
   function showLocationInfo() {
     const selectedLocation = select.value;
 
@@ -314,57 +312,56 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function showMoreInfo(infoType) {
     const selectedLocation = select.value;
-  
+
     if (selectedLocation && additionalInfoData[selectedLocation]) {
       const locationDetails = additionalInfoData[selectedLocation];
-  
+
       // Show specific information based on button clicked
       switch (infoType) {
-        case 'waitingtime':
+        case "waitingtime":
           additionalInfoText.innerHTML = `<strong>Average Waiting Time:</strong> ${locationDetails.waitingtime}`;
           break;
-        case 'approval':
+        case "approval":
           additionalInfoText.innerHTML = `<strong>Approval Rate:</strong> ${locationDetails.approval}`;
           break;
-        case 'processing':
+        case "processing":
           additionalInfoText.innerHTML = `<strong>Visa Processing Time and Delivery:</strong> ${locationDetails.processing}`;
           break;
-        case 'approved':
+        case "approved":
           additionalInfoText.innerHTML = `<strong>Athletes Approved:</strong> ${locationDetails.approved}`;
           break;
-        case 'denied':
+        case "denied":
           additionalInfoText.innerHTML = `<strong>Athletes Denied:</strong> ${locationDetails.denied}`;
           break;
-        case 'questions':
+        case "questions":
           // Loop through the questions and answers to format them properly
-          let questionsHTML = '<strong>Interview Questions:</strong><br>';
-          
-          locationDetails.questions.forEach(person => {
+          let questionsHTML = "<strong>Interview Questions:</strong><br>";
+
+          locationDetails.questions.forEach((person) => {
             questionsHTML += `<strong>${person.name}:</strong><br>`;
-            
-            person.questionsAndAnswers.forEach(qna => {
+
+            person.questionsAndAnswers.forEach((qna) => {
               // Now accessing the question and answer properties
               questionsHTML += `<em>Q:</em> ${qna.question}<br><em>A:</em> ${qna.answer}<br><br>`;
             });
           });
-          
+
           // Set the innerHTML with the formatted questions and answers
           additionalInfoText.innerHTML = questionsHTML;
           break;
         default:
-          additionalInfoText.innerHTML = "<strong>No additional information available.</strong>";
+          additionalInfoText.innerHTML =
+            "<strong>No additional information available.</strong>";
           break;
       }
-  
+
       additionalInfoDiv.style.display = "block"; // Show the additional info section
-      
-      
     } else {
-      additionalInfoText.innerHTML = "<strong>No additional information available.</strong>";
+      additionalInfoText.innerHTML =
+        "<strong>No additional information available.</strong>";
       additionalInfoDiv.style.display = "none";
     }
   }
-  
 
   // Add event listeners for location change
   select.addEventListener("change", showLocationInfo);
@@ -396,7 +393,3 @@ document.addEventListener("DOMContentLoaded", function () {
     showMoreInfo("questions");
   });
 });
-
-
-
-
