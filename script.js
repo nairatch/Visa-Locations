@@ -212,10 +212,10 @@ document.addEventListener("DOMContentLoaded", function () {
           break;
         case "questions":
           // Loop through the questions and answers to format them properly
-          let questionsHTML = "<strong>Interview Questions:</strong><br>";
+          let questionsHTML = "<strong>Interview Questions</strong><br>";
 
           locationDetails.questions.forEach((person) => {
-            questionsHTML += `<strong>${person.name}:</strong><br>`;
+            questionsHTML += `<strong>${person.name}</strong><br>`;
 
             person.questionsAndAnswers.forEach((qna) => {
               // Now accessing the question and answer properties

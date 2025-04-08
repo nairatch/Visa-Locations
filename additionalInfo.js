@@ -1,55 +1,109 @@
+import { ViennaData } from "./Vienna.js";
+import { CapeTownData } from "./CapeTown.js";
+import { BahrainData } from "./Bahrain.js";
+import { BrusselsData } from "./Brussels.js";
+import { BosniaData } from "./Bosnia.js";
+import { ZagrebData } from "./Zagreb.js";
+import { CyprusData } from "./Cyprus.js";
+import { PragueData } from "./Prague.js";
+import { DenmarkData } from "./Denmark.js";
+import { EstoniaData } from "./Estonia.js";
+import { EswatiniData } from "./Eswatini.js";
+import { FinlandData } from "./Finland.js";
+import { FranceData } from "./France.js";
+import { BerlinData } from "./Berlin.js";
+import { MunichData } from "./Munich.js";
+import { FrankfurtData } from "./Frankfurt.js";
+import { GreeceData } from "./Greece.js";
+import { HungaryData } from "./Hungary.js";
+import { IcelandData } from "./Iceland.js";
+import { ChennaiData } from "./Chennai.js";
+import { NewDelhiData } from "./NewDelhi.js";
+import { KolkataData } from "./Kolkata.js";
+import { MumbaiData } from "./Mumbai.js";
+import { HyderabadData } from "./Hyderabad.js";
+import { RomeData } from "./Rome.js";
+import { MilanData } from "./Milan.js";
+import { JapanData } from "./Japan.js";
+import { LatviaData } from "./Latvia.js";
+import { LiberiaData } from "./Liberia.js";
+import { LithuaniaData } from "./Lithuania.js";
+import { LuxembourgData } from "./Luxembourg.js";
+import { MadagascarData } from "./Madagascar.js";
+import { MauritiusData } from "./Mauritius.js";
+import { LagosData } from "./Lagos.js";
+import { AbujaData } from "./Abuja.js";
+import { NorwayData } from "./Norway.js";
+import { WarsawData } from "./Warsaw.js";
+import { KrakowData } from "./Krakow.js";
+import { LisbonData } from "./Lisbon.js";
+import { RomaniaData } from "./Romania.js";
+import { SenegalData } from "./Senegal.js";
+import { SerbiaData } from "./Serbia.js";
+import { SlovakiaData } from "./Slovakia.js";
+import { DurbanData } from "./Durban.js";
+import { JohannesburgData } from "./Johannesburg.js";
+import { SriLankaData } from "./SriLanka.js";
+import { SwedenData } from "./Sweden.js";
+import { SwitzerlandData } from "./Switzerland.js";
+import { NetherlandsData } from "./Netherlands.js";
+import { TogoData } from "./Togo.js";
+import { ZambiaData } from "./Zambia.js";
+import { ZimbabweData } from "./Zimbabwe.js";
+
 const additionalInfoData = {
-  "South Africa/Cape Town": {
-    waitingtime: "<br/>Cape Town available only for applicants with prior denials: ONLY on June 30 in 2025. <br/> Durban is available from May 2025, with about 25 days waiting time.<br/> Johannesburg is available from April 2025, with relatively shorter waiting times but not relevant for us because of previous denial history.",
-    approval: "100%",
-    processing: "1 week (3-4 business days for processing + delivery)",
-    approved:
-      "Nelly Jemeli, Brenda Kibor, Mercy Lomuria, Millicent Kemboi, Viola Jepleting, Naomi Jepleting, Faith Kipmaiyo, Caren Kiplagat",
-    denied: "No one denied",
-    questions: [
-      {
-        name: "Viola",
-        questionsAndAnswers: [
-          {
-            question: "Why do you want to go to America?",
-            answer:
-              "I want to go to America to study, and I have been offered a full scholarship which will cover all my study-related costs.",
-          },
-          {
-            question: "How did you get to know about the school?",
-            answer:
-              "I got to know about the school due to my outstanding performance in a time trial, where I ran a good time. The school offered me a full scholarship.",
-          },
-          {
-            question: "Do you live in Mauritius?",
-            answer:
-              "No, I am here for my visa interview because there is no valid visa date in my home country, Kenya.",
-          },
-          {
-            question: "Which school are you going to?",
-            answer: "I'm going to Mississippi State University.",
-          },
-        ],
-      },
-      {
-        name: "Nelly Jemeli",
-        questionsAndAnswers: [
-          {
-            question: "Do you know the coach of the school?",
-            answer: "Yes, I know the coach.",
-          },
-          {
-            question: "What are you going to do in America?",
-            answer: "I will be studying and training in my field.",
-          },
-          {
-            question: "Do you know the major?",
-            answer: "Yes, I will be majoring in Sports Management.",
-          },
-        ],
-      },
-    ],
-  },
-  // Add other locations' additional information here
+  ...ViennaData,
+  ...CapeTownData,
+  ...BahrainData,
+  ...BrusselsData,
+  ...BosniaData,
+  ...ZagrebData,
+  ...CyprusData,
+  ...PragueData,
+  ...DenmarkData,
+  ...EstoniaData,
+  ...EswatiniData,
+  ...FinlandData,
+  ...FranceData,
+  ...BerlinData,
+  ...MunichData,
+  ...FrankfurtData,
+  ...GreeceData,
+  ...HungaryData,
+  ...IcelandData,
+  ...ChennaiData,
+  ...NewDelhiData,
+  ...KolkataData,
+  ...MumbaiData,
+  ...HyderabadData,
+  ...RomeData,
+  ...MilanData,
+  ...JapanData,
+  ...LatviaData,
+  ...LiberiaData,
+  ...LithuaniaData,
+  ...LuxembourgData,
+  ...MadagascarData,
+  ...MauritiusData,
+  ...LagosData,
+  ...AbujaData,
+  ...NorwayData,
+  ...WarsawData,
+  ...KrakowData,
+  ...LisbonData,
+  ...RomaniaData,
+  ...SenegalData,
+  ...SerbiaData,
+  ...SlovakiaData,
+  ...DurbanData,
+  ...JohannesburgData,
+  ...SriLankaData,
+  ...SwedenData,
+  ...SwitzerlandData,
+  ...NetherlandsData,
+  ...TogoData,
+  ...ZambiaData,
+  ...ZimbabweData,
 };
+
 export default additionalInfoData;
