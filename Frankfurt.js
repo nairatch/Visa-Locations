@@ -1,4 +1,4 @@
-const FrankfurtData = {
+   const FrankfurtData = {
     "Germany/Frankfurt": {
       waitingtime: '<br/>Please check the current waiting times for residents <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/global-visa-wait-times-DEACTIVATED.html" target="_blank" rel="noopener noreferrer">here</a>.',
       approval: "Will be updated soon.",

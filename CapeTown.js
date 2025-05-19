@@ -1,11 +1,35 @@
 const CapeTownData = {
    "South Africa/Cape Town": {
     waitingtime:
-      "<br/>Cape Town available only for applicants with prior denials: ONLY on June 30 in 2025. <br/> Durban is available from May 2025, with about 25 days waiting time.<br/> Johannesburg is available from April 2025, with relatively shorter waiting times but not relevant for us because of previous denial history.",
+    '<br/>Please check the current waiting times for residents <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/global-visa-wait-times-DEACTIVATED.html" target="_blank" rel="noopener noreferrer">here</a>. As for non-resident bookings by May 2025, we were not able to get timely appointments in Cape Town, by that time slots are offered from August or September, which is too late. Random appointments does not seem to be opening up despite intensive monitoring of the system from our side. So, at the latest by the end of April 2025 we were able to find an appointment in July for Talaam. From May we have to switch our attention to European locations instead of Cape Town.',
     approval: "100%",
-    processing: "1 week (3-4 business days for processing + delivery)",
+    processing: `
+    It takes approximately 1 week — 3–4 business days for processing the visa and 1–2 business days for delivery.
+     <br/><br/>
+    Two emails are sent to each applicant: one when the passport is released to the courier, and another (same day) 
+    with the waybill number. It typically takes 1–2 business days for the passport to reach the pick-up station at the airport. 
+    The passport can be tracked via the link in the second email.
+    <br/><br/>
+    <strong>Case examples:</strong><br/>
+    <strong>Caren</strong> had an appointment on January 15, 2025. Although her visa was approved promptly, 
+    the status did not update to "issued" for two weeks. Eventually, it was issued on January 27, 
+    and the passport was sent to the airport pick-up location the following day, January 28.
+    <br/><br/>
+    <strong>Viola</strong>, <strong>Faith Kipmaiyo</strong>, and <strong>Naomi Tigoi</strong> had all their appointments on January 16, 2025. Their visa were issued the next day, 
+    and they all received both email notifications about the delivery on the same day.
+    <br/><br/>
+    <strong>Cynthia Jemutai</strong> had her appointment on March 12, her visa was issued on March 14 and she got the delivery emails on March 18. So, it took 5 business days for her visa processing.
+    <br/><br/>
+    <strong>Efe-Sam</strong> had his appointment on March 19, his visa was issued the next day, and he received an email on March 24, it was on Monday, on the fourth working day from the visa appointment.
+    <br/><br/>
+    <strong>Solomon Sayo</strong> had his appointment on April 29, his visa was issued the next day and he got both emails on May 2, on the 4th working day from his appointment.
+    <br/><br/>
+    Please check the detailed information on which documents are required for passport pickup 
+    <a href="https://ais.usvisa-info.com/en-za/niv/information/courier" 
+       target="_blank" rel="noopener noreferrer">here</a>.
+  `,
     approved:
-      "Nelly Jemeli, Brenda Kibor, Mercy Lomuria, Millicent Kemboi, Viola Jepleting, Naomi Jepleting, Faith Kipmaiyo, Caren Kiplagat",
+      "Nelly Jemeli, Brenda Kibor, Mercy Lomuria, Millicent Kemboi, Viola Jepleting, Naomi Jepleting, Faith Kipmaiyo, Caren Kiplagat., Linus Chepkochei, Cynthia Jemutai, Efe-Sam Agalivie, Solomon Sayo, Fredrick Kipkosgei, Ann Lemirisho. 5 further athletes have upcoming appointments, they will be hopefully approved in May-July: Winny Kosgei, Mercy Jepkoech, Patrober Kosgei, Maurine Talaam.",
     denied: "No one denied",
     questions: [
       {
