@@ -3,7 +3,7 @@ export { locationData };
 
 const locationData = {
   "Austria/Vienna":
-    "<br/>We have no prior experience processing third-country national applications in Vienna.  Appointments in Vienna are generally difficult to secure, particularly for non-residents. However, we can explore this option in the future if needed.",
+    "<br/>Until 2025 We had no prior experience for third-country nationals in Vienna. Currently we have two upcoming appointments on June 16 and 17, 2025 for Rose Waithira Mburu and Mercy Jebet. We will gather more experience soon! Coordination for athletes can be easier for us there since we have a college (Christian) working in Vienna.",
   "Bahrain/Manama":
     "<br/>We successfully processed two athlete approvals in Manama during July-August 2024. Both athletes possessed Bahraini nationality. Notably, one athlete, Musa, also held Nigerian citizenship. This experience demonstrates Manama's viability as an approval location. It's important to note, however, that Nigerian citizens require an eVisa for Bahrain, which incurs additional costs. Despite this, if an athlete is already present in Bahrain for a race or similar event, applying in Manama is a beneficial option.",
   "Belgium/Brussels":
@@ -15,7 +15,7 @@ const locationData = {
   "Cyprus/Nicosia":
     "<br/>We have no prior experience with applications in Cyprus, though it remains a location of interest. We considered sending a Kenyan athlete there, but logistical challenges arose. Direct flights to Nicosia are unavailable, requiring travel through the Turkish Republic of Northern Cyprus. This would involve time, expense, and the complexity of crossing between the two regions. Additionally, Kenyan citizens require both a Schengen visa for Cyprus and a Turkish eTA for transit.",
   "Czech Republic/Prague":
-    "<br/>Good experience but caution is needed with this location. 4 athletes were interviewed there and three of them approved. They were of mixed types: first timers, with previous denials, or older ones. Interviews were moderate. The first appointment was fine, then it was followed by a denial with Caren; Afterwards there was an administrative processing for Silas&Cosmas, which was ended with an approval within hours.",
+    "<br/>Good experience but caution is needed with this location. Five athletes were interviewed there in 2024: four of them were approved and one was denied. One was interviewed in May 2025 and approved. Another one, Abigael Chemnagei has an upcoming appointment in June 2025! </br>The athletes were of mixed types: first timers, with previous denials, or older ones and the interviews were moderate. </br>The first appointment in 2024 was fine, then it was followed by a denial with Caren. Afterwards there was an administrative processing for Silas&Cosmas, which was ended with an approval within hours.",
   "Denmark/Copenhagen": "<br/>We don’t currently have any experience in Copenhagen, but it may be an option in the future if needed. We also don’t have an active account to check availability directly, but according to the Global Wait Times (as of April 8, 2025), appointments can typically be obtained within 4 days, at least for residents.",
   "Estonia/Tallinn":
     "<br/>Like Vilnius there is no chance for approval, it apparently depends on an interviewer because questions were also difficult. 2 out of 2 were denied, Brenda and Nelly, who had also been denied in Vilnius 2 days before. They got a letter that both countries belong to the same booking system, this turned out to be the reason for this second denial. No further attempts were done in this location.",
@@ -41,7 +41,7 @@ const locationData = {
   "Latvia/Riga": "<br/>Info will be added.",
 
   "Liberia/Monrovia":
-    "<br/>The appointment system likely has a flag or record for individuals who have previously been denied a visa or entry. When Blessing Ogundiruan's appointment was booked, it was done in a way that didn't properly reflect her prior denial.As a result, when she arrived for her appointment, the system or staff recognized the discrepancy: the system showed she should not have been able to make that type of appointment due to her previous denial. Therefore, they refused to see her.We booked another appointment for her, it happened in early January 2025. <br/> So, pay attention to the fact that previous visa denial history should be correctly reflected in the embassy account.",
+    "<br/>We send Nigerian athletes to Liberia. Togo, Senegal and Liberia are alternative countries for Nigerians if refused in Lagos. Besides, they can travel visa-free to Liberia.<br/>We stopped sending them to Madagascar since flight is expensive. In case of those 3 alternative countries, we also have to check who pays the trip expenses, either the university or the athlete. <br/><br/>Please note: The appointment system likely has a flag or record for individuals who have previously been denied a visa. When Blessing Ogundiruan's appointment was booked, it was done in a way that didn't properly reflect her prior denial. As a result, when she arrived for her appointment, the system or staff recognized the discrepancy: the system showed she should not have been able to make that type of appointment due to her previous denial. Therefore, they refused to interview her. We booked another appointment for her, it happened in early January 2025. <br/> So, pay attention to the fact that previous visa denial history should be correctly reflected in the embassy accountin Liberia!",
 
   "Lithuania/Vilnius":
     "<br/>No chance for approval, it apparently depends on an interviewer because questions were also difficult. 2 out of 2 were denied but those 2 were Brenda and Nelly, who also had previous denials. No further attempts were done in this location.",
@@ -59,9 +59,10 @@ const locationData = {
     "<br/>A top visa location in Europe! Athletes get approved even after multiple denials. So, it's a good backup option for those who get denied in Europe. We have to be careful with the location though, not many athletes should be sent there. Only those who have no chance elsewhere in Europe or those who are really really important. The trip to Poland is cheap and the hostel has a good locaiton as well.",
   "Portugal/Lisbon":
     "<br/>A very positive experience with this location! Interviews were easy and approvals quick. It seems to work well for older athletes with older KCSEs, with tough cases and multiple denials previously. Besides, the trip to Lisbon is not expensive.",
-  "Romania/Bucharest": "<br/>Info will be added.",
+  "Romania/Bucharest": "Info will be added.",
   "Senegal/Dakar": "<br/>Info will be added.",
   "Serbia/Belgrade": "<br/>Info will be added.",
+  "Singapore/Singapore": "<br/>We have had no prior experience with visa applications in Singapore until now. On June 17, 2025, our first Kenyan athlete (Stephen Kipchumba	Mutai) will attend an appointment there. The outcome of this case will be crucial in shaping our future strategy. After that we might send another Keynan athlete, Mathew Kipkirui Meli there.<br/>If the visa is approved and the process runs smoothly, we plan to begin sending Kenyan athletes to Singapore instead of Europe, as they can travel to Singapore visa-free. This would make Singapore a strong alternative to Cape Town as a favorable location for our athletes. At the moment, we are actively exploring opportunities in developed Asian countries.",
   "Slovakia/Bratislava":
     "<br/>Approval rate is 50/50 and the interiews difficult (Caren denied and Dismus approved). Besides, there are no good flights to Bratislava, one must fly to Vienna and then travel to Bratislava by train.",
   "South Africa/Cape Town":

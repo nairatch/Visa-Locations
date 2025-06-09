@@ -1,11 +1,23 @@
 const CapeTownData = {
-   "South Africa/Cape Town": {
-    waitingtime:
-    '<br/>Please check the current waiting times for residents <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/global-visa-wait-times-DEACTIVATED.html" target="_blank" rel="noopener noreferrer">here</a>. As for non-resident bookings by May 2025, we were not able to get timely appointments in Cape Town, by that time slots are offered from August or September, which is too late. Random appointments does not seem to be opening up despite intensive monitoring of the system from our side. So, at the latest by the end of April 2025 we were able to find an appointment in July for Talaam. From May we have to switch our attention to European locations instead of Cape Town.',
+  "South Africa/Cape Town": {
+    waitingtime: '<br/>Please check the current waiting times for residents <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/global-visa-wait-times.html" target="_blank" rel="noopener noreferrer">here</a>.',
     approval: "100%",
     processing: `
     It takes approximately 1 week — 3–4 business days for processing the visa and 1–2 business days for delivery.
      <br/><br/>
+    When a U.S. visa is issued and is ready for pickup, the default passport pickup location is:
+    <br/>
+    📍 <strong>DHL Express – Cape Town Airport Branch</strong><br/>
+      Address:<br/>
+      DHL Express Service Point<br/>
+      Freight Agents Building<br/>
+      Cape Town International Airport<br/>
+      Cape Town, 7490<br/>
+      South Africa
+      <br/><br/>
+    🕒 <strong>Operating Hours:</strong><br/>
+Usually Monday to Friday, typical business hours (e.g., 08:00–17:00), but you should confirm based on the email notification or DHL’s site.
+<br/><br/>
     Two emails are sent to each applicant: one when the passport is released to the courier, and another (same day) 
     with the waybill number. It typically takes 1–2 business days for the passport to reach the pick-up station at the airport. 
     The passport can be tracked via the link in the second email.
@@ -29,7 +41,7 @@ const CapeTownData = {
        target="_blank" rel="noopener noreferrer">here</a>.
   `,
     approved:
-      "Nelly Jemeli, Brenda Kibor, Mercy Lomuria, Millicent Kemboi, Viola Jepleting, Naomi Jepleting, Faith Kipmaiyo, Caren Kiplagat., Linus Chepkochei, Cynthia Jemutai, Efe-Sam Agalivie, Solomon Sayo, Fredrick Kipkosgei, Ann Lemirisho. 5 further athletes have upcoming appointments, they will be hopefully approved in May-July: Winny Kosgei, Mercy Jepkoech, Patrober Kosgei, Maurine Talaam.",
+      "Nelly Jemeli, Brenda Kibor, Mercy Lomuria, Millicent Kemboi, Viola Jepleting, Naomi Jepleting, Faith Kipmaiyo, Caren Kiplagat., Linus Chepkochei, Cynthia Jemutai, Efe-Sam Agalivie, Solomon Sayo, Fredrick Kipkosgei, Ann Lemirisho, Winny Kosgei, Mercy Jepkoech, Patrober Kosgei. Im May 2025 4x athletes approved!",
     denied: "No one denied",
     questions: [
       {
@@ -75,7 +87,6 @@ const CapeTownData = {
       },
     ],
   },
-  };
-  
-  export { CapeTownData };
-  
+};
+
+export { CapeTownData };

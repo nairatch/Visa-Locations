@@ -40,6 +40,7 @@ import { LisbonData } from "./Lisbon.js";
 import { RomaniaData } from "./Romania.js";
 import { SenegalData } from "./Senegal.js";
 import { SerbiaData } from "./Serbia.js";
+import { SingaporeData } from "./Singapore.js";
 import { SlovakiaData } from "./Slovakia.js";
 import { DurbanData } from "./Durban.js";
 import { JohannesburgData } from "./Johannesburg.js";
@@ -94,6 +95,7 @@ const additionalInfoData = {
   ...RomaniaData,
   ...SenegalData,
   ...SerbiaData,
+  ...SingaporeData,
   ...SlovakiaData,
   ...DurbanData,
   ...JohannesburgData,

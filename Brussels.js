@@ -1,7 +1,6 @@
 const BrusselsData = {
   "Belgium/Brussels": {
-    waitingtime:
-      '<br/>Please check the current waiting times for residents <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/global-visa-wait-times-DEACTIVATED.html" target="_blank" rel="noopener noreferrer">here</a>.  As for May 2025, available appointments for non-residents are offered from December 2025. So far we have not been able to book an appointment there for fall 2025 athletes.',
+    waitingtime: '<br/>Please check the current waiting times for residents <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/global-visa-wait-times.html" target="_blank" rel="noopener noreferrer">here</a>.',
     approval:
       "High approval rate. 3 out of 3 approved: Valentine Jemutai in June 2024, Faith Jeptoo Kiplimo in December 2024 and Phylis Kibet in January 2025.",
     processing:
