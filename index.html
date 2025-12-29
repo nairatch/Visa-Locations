@@ -8,60 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <section class="athlete-location">
-        <h1>Locations Assessment</h1>
-        <p id="introText">Start a Questionnaire</p>
-
-        <div id="questionnaire" style="display: none">
-          <div id="ageGroupDiv">
-            <p>How old is the athlete?</p>
-            <input type="radio" name="ageGroup" value="under20" /> Under 20
-            <input type="radio" name="ageGroup" value="between20-25" /> Between
-            20-25 <input type="radio" name="ageGroup" value="25plus" /> 25 and
-            above
-          </div>
-
-          <div id="englishDiv" style="display: none">
-            <p>Does the athlete have good English skills?</p>
-            <input type="radio" name="english" value="yes" /> Yes
-            <input type="radio" name="english" value="no" /> No
-          </div>
-
-          <div id="kcseDiv" style="display: none">
-            <p>Does the athlete have a recent KCSE?</p>
-            <input type="radio" name="kcse" value="yes" /> Yes
-            <input type="radio" name="kcse" value="no" /> No
-          </div>
-
-          <div id="euDiv" style="display: none">
-            <p>Can the athlete travel EU?</p>
-            <input type="radio" name="eu" value="yes" /> Yes
-            <input type="radio" name="eu" value="no" /> No
-          </div>
-
-          <div id="denialDiv" style="display: none">
-            <p>Has the athlete been denied a visa before?</p>
-            <input type="radio" name="denial" value="yes" /> Yes
-            <input type="radio" name="denial" value="no" /> No
-          </div>
-
-          <div id="startdateDiv" style="display: none">
-            <p>Is the start date within 2 months?</p>
-            <input type="radio" name="startdate" value="yes" /> Yes
-            <input type="radio" name="startdate" value="no" /> No
-          </div>
-
-          <br />
-          <button id="recommendButton">Recommended</button><br />
-          <p id="warningMessage" style="display: none; color: red">
-            Please answer all questions to proceed!
-          </p>
-          <div id="suggestion" style="display: none"></div>
-        </div>
-        <br />
-        <button id="resetButton" style="display: none">Reset</button>
-      </section>
-
+      
       <section class="visa-location">
         <h1>Locations Summary</h1>
         <select id="visaLocation" onchange="showLocationInfo()">
