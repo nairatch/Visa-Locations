@@ -1,47 +1,53 @@
-section {
-  background-color: white; /* White background for contrast */
-  padding: 10px; /* Space inside */
-  padding-bottom: 10px;
-  margin-bottom: 10px; /* Space between sections */
-  border-radius: 8px; /* Rounded edges */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
-  
-}
-
-h1 {
-  font-size: 28px; /* Slightly larger */
-  font-weight: 700; /* Bold for emphasis */
- 
-  text-transform: uppercase; /* Modern uppercase style */
-  letter-spacing: 1.5px; /* Spaced-out letters */
-  color: #333; /* Dark gray for a sleek look */
-  background: linear-gradient(45deg, #4a90e2, #357abd); /* Subtle blue gradient */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Gradient text effect */
-  margin-bottom: 20px; /* More spacing */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); /* Light shadow for depth */
-}
-
-
-
-p {
-  font-weight: bold;
-}
-
+/* General container styling */
 .container {
-  max-width: 600px; /* Wider container for better layout */
+  max-width: 600px;
   margin: auto;
-  background: #f8f9fa; /* Light gray background */
+  background: #f8f9fa;
   padding: 10px;
   border-radius: 10px;
 }
 
+/* Section boxes */
+section {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #333;
+  background: linear-gradient(45deg, #4a90e2, #357abd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Bold text for emphasis inside paragraphs */
+strong {
+  font-weight: bold;
+}
+
+/* Intro button */
 #introText {
   position: relative;
   width: 50%;
   display: inline-block;
   padding: 5px 0px;
-  background-color: #4a90e2; /* A modern blue shade */
+  background-color: #4a90e2;
   color: white;
   font-size: 20px;
   font-weight: bold;
@@ -53,8 +59,8 @@ p {
 }
 
 #introText:hover {
-  background-color: #357abd; /* Darker blue for hover */
-  transform: scale(1.05); /* Slight scaling effect */
+  background-color: #357abd;
+  transform: scale(1.05);
 }
 
 #introText::after {
@@ -70,11 +76,12 @@ p {
 }
 
 #introText:hover::after {
-  border-left-color: #357abd; /* Darker arrow color on hover */
+  border-left-color: #357abd;
 }
 
+/* Recommend button */
 #recommendButton {
-  background-color: #28a745; /* Green for positive action */
+  background-color: #28a745;
   padding: 6px 14px;
   font-size: 16px;
   font-weight: bold;
@@ -87,33 +94,33 @@ p {
 }
 
 #recommendButton:hover {
-  background-color: #218838; /* Darker green on hover */
-  transform: scale(1.05); /* Slight scaling effect */
-  
+  background-color: #218838;
+  transform: scale(1.05);
 }
 
+/* Reset button */
 #resetButton {
-  background-color: #dca235; /* Red color for reset */
+  background-color: #dca235;
   color: white;
   font-size: 15px;
   font-weight: bold;
   padding: 6px 14px;
   border: none;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Light shadow */
-  display: block; /* Ensure it's visible when required */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  display: block;
 }
 
 #resetButton:hover {
-  background-color: #c82333; /* Slightly darker red on hover */
-  transform: scale(1.05); /* Slight scaling effect */
+  background-color: #c82333;
+  transform: scale(1.05);
 }
 
-
+/* Useful links section */
 .useful-links {
-  background-color: #eef5ff; /* Slightly blue background for distinction */
+  background-color: #eef5ff;
   padding: 15px;
   border-radius: 8px;
 }
@@ -126,41 +133,67 @@ li {
   margin-bottom: 10px;
 }
 
-/* Ensure all buttons have consistent width */
+/* Buttons styling */
 button {
-  width: 145px; /* Set width for all buttons */
-  padding: 4px 8px; /* Adjust padding */
-  font-size: 14px; /* Font size */
-  margin: 5px; /* Space between buttons */
-  border: 1px solid #ccc; /* Border */
-  border-radius: 5px; /* Rounded corners */
-  background-color: #f0f0f0; /* Light background */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: all 0.3s ease; /* Smooth transition */
+  width: 145px;
+  padding: 4px 8px;
+  font-size: 14px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* Hover effect */
 button:hover {
-  background-color: #007BFF; /* Blue background on hover */
-  color: white; /* Text color white */
-  border-color: #007BFF; /* Border color on hover */
+  background-color: #007BFF;
+  color: white;
+  border-color: #007BFF;
 }
 
-/* Active or clicked state */
 button.active {
-  background-color: #28a745; /* Green background when clicked */
-  color: white; /* White text */
-  border-color: #28a745; /* Border color when clicked */
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
 }
 
-/* Style for the info section */
-#additionalInfoDiv {
-  display: none; /* Initially hide the info */
-  margin-top: 15px; /* Space above the info section */
+/* Additional info section */
+#additionalInfo {
+  display: none;
+  margin-top: 15px;
 }
 
 #additionalInfoText {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
+}
+
+/* Visa guidance section formatting */
+.visa-guidance {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+.visa-guidance h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #4a90e2, #357abd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+.visa-guidance p {
+  line-height: 1.6;
+  font-weight: normal; /* default normal, not bold */
+}
+
+.visa-guidance strong {
+  font-weight: bold;
+  color: #d9534f; /* Optional: make "Important Notice" red for emphasis */
 }
